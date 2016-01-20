@@ -1,0 +1,48 @@
+{
+  "name": "es7-react-redux-saga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack --progress --colors --watch",
+    "compile": "webpack --progress --colors --watch --optimize-minimize",
+    "test": "mocha src/**/*.test.js --reporter nyan --compilers js:babel-core/register --recursive",
+    "test:watch": "npm test -- --watch"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": ["describe", "it"]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-preset-stage-0": "^6.3.13",
+    "balanced-match": "^0.3.0",
+    "chai": "^3.4.1",
+    "concat-map": "0.0.1",
+    "copy-webpack-plugin": "^0.3.3",
+    "css-loader": "^0.23.1",
+    "mocha": "^2.3.4",
+    "redux-devtools": "^3.0.1",
+    "redux-devtools-dock-monitor": "^1.0.1",
+    "redux-devtools-log-monitor": "^1.0.1",
+    "redux-thunk": "^1.0.3",
+    "standard": "^5.4.1",
+    "style-loader": "^0.13.0"
+  },
+  "dependencies": {
+    "axios": "^0.8.1",
+    "babel-loader": "^6.2.0",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "express": "^4.13.3",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-redux": "^4.0.2",
+    "redux": "^3.0.5",
+    "redux-saga": "^0.3.3"
+  }
+}

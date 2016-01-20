@@ -1,0 +1,2 @@
+export const DELAY_INCREMENT = 'DELAY_INCREMENT'
+export const INCREMENT = 'INCREMENT'
