@@ -2,7 +2,7 @@
 /* global it */
 
 import { expect } from 'chai'
-import * as actions from '.'
+import * as actions from './index'
 import * as types from '../constants/ActionTypes'
 
 describe('ACTIONS', () => {
