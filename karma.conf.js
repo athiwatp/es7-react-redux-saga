@@ -6,14 +6,24 @@ module.exports = function (config) {
     files: [
       'tests.webpack.js'
     ],
-    plugins: [ 'karma-chrome-launcher', 'karma-chai', 'karma-mocha',
-      'karma-sourcemap-loader', 'karma-webpack', 'karma-coverage',
+    plugins: [
+      'karma-chrome-launcher',
+      'karma-chai', 'karma-mocha',
+      'karma-sourcemap-loader',
+      'karma-webpack',
+      'karma-coverage',
       'karma-mocha-reporter'
     ],
     preprocessors: {
-      'tests.webpack.js': [ 'webpack', 'sourcemap' ]
+      'tests.webpack.js': [
+        'webpack',
+        'sourcemap'
+      ]
     },
-    reporters: [ 'mocha', 'coverage' ],
+    reporters: [
+      'mocha',
+      'coverage'
+    ],
     webpack: {
       devtool: 'inline-source-map',
       module: {
