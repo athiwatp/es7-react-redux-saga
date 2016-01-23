@@ -5,5 +5,5 @@ $ npm install
 
 # run
 ```
-$ npm run all
+$ npm run dev
 ```
